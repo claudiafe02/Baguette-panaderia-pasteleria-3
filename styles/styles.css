@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 280px auto 150px;
+    grid-template-rows: 45px 25px 650px 40px;
+}
+/* Contenedor: de Título y Barra de navegación */
+header{
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 2;
+}
+header .titheader {
+    background-color: rgb(44, 28, 2);
+    height: 45px;
+    padding-left: 280px;
+    color:rgb(249, 250, 200);
+    font-size: 12px;
+    font-weight: 300;
+}
+header .barranav {
+    background-color: rgba(219, 160, 88, 0.988);
+    height: 35px;
+    padding-left: 225px;
+    list-style: none;
+}
+header .barranav li {
+    display: inline;
+    margin-inline: 25px;
+}
+header .barranav a{
+    color:bisque;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    min-height: 25px;
+}
+header .active a {
+    color: rgb(44, 28, 2);
+}
+/* Contenedor: de Cuerpo de la página */
+main{
+    grid-column: 1/span 3;
+    grid-row: 3/4;
+    min-height: 650px;
+    background-image: url("../images/fondo2.jpg");
+    display: flex;
+}
+.aside1{
+    width: 280px;
+}
+main .pagemain{
+    width: 650px;
+    background-color:rgb(245, 246, 156);
+    display: flex;
+}
+/* Espacio central del main de la página index */
+main .textmain{
+    width: 375px;
+}
+main .img{
+    padding-top: 150px;
+    padding-right: 20px;
+}
+.aside2{
+    width: 150px;
+}
+/* Espacio central del main para imágenes de las páginas: nuestrosproductos,panadería, pastelería, opcionessaladas y contacto*/
+main .pageimagmain{
+    width: 650px;
+    background-color:rgb(245, 246, 156);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 25% 50%;
+}
+main .imagesmain{
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+main .imagesmain img{
+    width: 125px;
+    height: 120px;
+    padding: 3px;
+}
+/* Espacio central del main para texto y menú de las páginas: nuestrosproductos,panadería, pastelería, opcionessaladas */
+main .textomain{
+    grid-column: 1/span 2;
+    grid-row: 3/4;
+}
+main .menumain {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding-top: 50px;
+}
+main .textomain li{
+    color: rgb(44, 28, 2);
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+main li{
+    list-style-type: none;
+}
+main .menumain a{
+    color:rgb(177, 124, 60);
+    font-size: 15px;
+    font-weight: 400;
+    min-height: 25px;
+    text-decoration: none;
+}
+main h2{
+    color: rgb(44, 28, 2);
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+/* Página Contacto */
+main form >*{
+    color: rgb(44, 28, 2);
+    /* padding-top: 10px;
+    padding-bottom: 0.5px; */
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main .contactoubicacion{
+    padding-top: 40px;   
+    padding-bottom: 10px;
+}
+main iframe{
+    padding-left: 25px;
+}
+/* p para main de todas las páginas */
+main p{
+    width: 70%;
+    color: rgb(44, 28, 2);
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+main .imagmejorada img{
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+}
+
+/* Contenedor: Footer */
+footer{
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+    min-height: 60px;
+    background-image: url("../images/fondo2.jpg");
+}
+footer .footermain{
+    width: 650px;
+    min-height: 40px;
+    margin-left: 280px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    background-color: rgba(219, 160, 88, 0.988);
+}
+footer .footermain i{
+    padding-left: 25px; 
+}
+@media screen and (max-width: 480px) {  
+    /* Contenedor principal */
+    .container1{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50px auto 6.6px;
+        grid-template-rows: 45px 25px 765px 40px;
+    }
+    /* Título y Barra de navegación */
+    header .titheader {
+        padding-left: 50px;
+        font-size: 6px;
+    }
+    header .barranav {
+        padding-left: 8px;
+    }
+    header .barranav li {
+        display: inline;
+        margin-inline: 13px;
+    }
+    header .barranav a{
+        font-size: 8px;
+        }
+    /* Contenedor: de Cuerpo de la página */
+    .aside1{
+        width: 50px;
+    }
+    main .pagemain{
+        width: 390px;
+    }
+    /* Espacio central del main de la página index */
+    main .textmain{
+        width: 145px;
+    }
+    main .pagemain img{
+        width: 200px;
+    }
+    .aside2{
+        width: 30px;
+    }
+    /* Espacio central del main para imágenes de las páginas: nuestrosproductos,panadería, pastelería, opcionessaladas y contacto*/
+    main .pageimagmain{
+        width: 390px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    }
+    main .imagesmain{
+        grid-row: 1/span 4;
+        padding-top: 3px;
+        padding-left: 1.25px;
+    }
+    main .imagesmain img{
+        width: 68px;
+        height: 120px;
+        padding: 3px;
+    }
+    /* Espacio central del main para texto y menú de las páginas: nuestrosproductos,panadería, pastelería, opcionessaladas */
+    main .menumain {
+        padding-top: 480px;
+        padding-right: 10px;
+    }
+    
+    main h2{
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+    main .textomain h2{
+        padding-top: 450px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+    main .textomain li{
+        font-size: 8px;
+    }
+    main .menumain a{
+        font-size: 10px;
+        min-height: 25px;
+    }
+    /* Página Contacto */
+    main form >*{
+        padding-left: 10px;
+        font-size: 10px;    
+    }
+    main .contactoubicacion{
+        padding-top: 40px;   
+        padding-bottom: 10px;
+    }
+    main iframe{
+        padding-left: 25px;
+    }
+    /* p para main de todas las páginas */
+    main p{
+        width: 70%;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 8px;
+        }
+    main .imagmejorada img{
+        width: 150px;
+        height: 300px;
+        max-height: 300px;
+    }
+    /* Contenedor: Footer */
+    footer{
+        min-height: 60px;
+    }
+    footer .footermain{
+        width: 390px;
+        min-height: 40px;
+        margin-left: 50px;
+        padding-top: 20px; 
+        padding-bottom: 20px;
+    }
+    footer .footermain i{
+        padding-left: 25px; 
+    }
+}

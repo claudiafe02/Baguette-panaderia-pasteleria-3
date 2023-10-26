@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+.contprincipal {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 30% 60% 10%;
+}
+
+header {
+  grid-column: 1/span 3;
+  grid-row: 1/2;
+  min-height: 15%;
+}
+header .titheader {
+  width: 100%;
+  min-height: 55%;
+  padding-left: 20%;
+  background-color: rgba(44, 28, 2, 0.5);
+  color: rgb(249, 250, 200);
+  font-family: "Young", serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media screen and (max-width: 650px) {
+  header .titheader {
+    padding-left: 10%;
+  }
+}
+header .barranav {
+  width: 100%;
+  min-height: 45%;
+  background-color: rgba(238, 163, 71, 0.94);
+}
+header .barranav #btn-menu {
+  display: none;
+}
+header .barranav label {
+  display: none;
+  width: 30px;
+  min-height: 30px;
+  padding: 5px;
+}
+header .barranav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header .barranav ul li :hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+header .barranav ul li a {
+  display: block;
+  padding: 5px 55px;
+  text-decoration: none;
+  color: rgba(44, 28, 2, 0.5);
+  font-family: "Young", serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1220px) {
+  header .barranav label {
+    display: block;
+  }
+  header .barranav ul {
+    flex-direction: column;
+  }
+  header .barranav .menu {
+    position: absolute;
+    background-color: rgb(219, 160, 88);
+    width: 80%;
+    margin-left: -80%;
+    transition: all 0.3s;
+  }
+  header .barranav .menu li {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  header .barranav #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+
+main {
+  grid-column: 1/span 3;
+  grid-row: 2/3;
+  min-height: 80%;
+  display: flex;
+}
+main .aside1 {
+  width: 20%;
+  background-image: linear-gradient(to right, rgba(249, 233, 97, 0.795), rgba(213, 208, 203, 0.944));
+}
+main .pagemain {
+  width: 60%;
+  background-color: rgba(249, 238, 187, 0.94);
+  display: flex;
+  gap: 1.5rem;
+}
+main .pagemain .textmain {
+  flex-shrink: 1;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+main .pagemain .textmain h2 {
+  color: rgba(44, 28, 2, 0.7);
+  font-size: 15px;
+}
+main .pagemain .textmain p {
+  padding-top: 3%;
+  font-size: 15px;
+  font-weight: 400;
+}
+main .pagemain .img {
+  flex-shrink: 0;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-top: 10%;
+  padding-right: 2%;
+}
+@media screen and (max-width: 650px) {
+  main .pagemain .img {
+    display: none;
+  }
+}
+main .aside2 {
+  width: 20%;
+  background-image: linear-gradient(to left, rgba(249, 233, 97, 0.795), rgba(213, 208, 203, 0.944));
+}/*# sourceMappingURL=estilos.css.map */
