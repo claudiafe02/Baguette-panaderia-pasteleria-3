@@ -1,19 +1,22 @@
 footer {
   grid-column: 1/span 3;
   grid-row: 3/4;
-  min-height: 5%;
   display: flex;
 }
 footer .aside1 {
   width: 20%;
+  min-height: 50px;
   background-image: linear-gradient(to right, rgba(249, 233, 97, 0.795), rgba(213, 208, 203, 0.944));
 }
 footer .footermain {
   width: 60%;
-  min-height: 40px;
-  background-color: rgba(44, 28, 2, 0.5);
+  min-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(238, 163, 71, 0.94);
 }
 footer aside2 {
   width: 20%;
+  min-height: 50px;
   background-image: linear-gradient(to left, rgba(249, 233, 97, 0.795), rgba(213, 208, 203, 0.944));
 }/*# sourceMappingURL=footer.css.map */

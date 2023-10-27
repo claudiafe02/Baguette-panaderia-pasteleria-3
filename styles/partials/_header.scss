@@ -6,12 +6,17 @@ header{
     .titheader{
         width: $widthcont;
         min-height: 55%;
-        padding-left: 20%;
+        padding-top: 25px;
+        padding-left: 21%;
         background-color: rgba(44, 28, 2, 50%);
-        color:rgb(249, 250, 200);
+        color:rgba(249, 250, 200, 0.859);
         font-family: $fontYoung;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 400;
+
+        .titprinc {
+            font-size: 14.5px;   
+        }
         
         @include mobile{
             padding-left: 10%;
@@ -30,7 +35,7 @@ header{
             display: none;
             width: 30px;
             min-height: 30px;
-            padding: 5px;
+            padding: 30px 5px;
         }
 
         ul{
@@ -48,11 +53,12 @@ header{
 
                 a{
                     display: block;
-                    padding: 5px 55px;
+                    padding: 25px 48px;
                     text-decoration: none; 
-                    color: rgba(44, 28, 2, 50%);
+                    // color: rgba(44, 28, 2, 50%);
+                    color:rgb(249, 250, 200);
                     font-family: $fontYoung;
-                    font-size: 13px;
+                    font-size: 15px;
                     font-weight: 400;
                 }             
             }
